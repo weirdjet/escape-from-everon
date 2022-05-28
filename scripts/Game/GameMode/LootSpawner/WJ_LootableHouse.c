@@ -100,13 +100,14 @@ class WJ_LootableHouse
 		vector transform[4];
 		m_eHouseEntity.GetWorldTransform(transform);
 		transform[3] = spawnPoint;
-		transform[3][1] = transform[3][1] + 0.3;
+		//transform[3][1] = transform[3][1] + 0.3;
 		
 		params.Transform = transform;
 		
 		Resource resource = Resource.Load( item.GetPrefabName() );
 		IEntity spawnedItem = GetGame().SpawnEntityPrefab(resource, GetGame().GetWorld(), params);
-
+		
+		spawnedItem.SetFlags(EntityFlags.ACTIVE, false);
 		spawnedItem.SetAngles(item.GetAngles());
 		
 		return spawnedItem;
