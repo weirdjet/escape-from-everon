@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{5C73F171217088A5}Configs/LootSpawns/WJ_LootSpawns.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

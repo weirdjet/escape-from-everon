@@ -1,0 +1,8 @@
+GameProject {
+ ID "weirdjetefe"
+ GUID "5971041BB33F255C"
+ TITLE "weirdjet.efe"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
